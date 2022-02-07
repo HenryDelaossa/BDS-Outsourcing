@@ -1,0 +1,97 @@
+.footer {
+    background-color: #141f3b;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .ctnDivsFooter {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 4rem;
+        .ChilFooter1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .ctnLogoBdsFooter {
+                text-align: center;
+                .logoBdsFooter {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 4rem;
+                    padding: 0;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-style: oblique;
+                    font-weight: bold;
+                    position: relative;
+                    &.logoBdsFooter::before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0%;
+                        width: 100%;
+                        height: 5px;
+                        border-radius: 5px 1px 5px 1px;
+                        background-color: #fff;
+                    }
+                    &.logoBdsFooter::after {
+                        content: "";
+                        position: absolute;
+                        left: unset;
+                        right: -10px;
+                        top: 20%;
+                        width: 5px;
+                        height: 70%;
+                        border-radius: 5px 1px 5px 1px;
+                        background-color: #fff;
+                    }
+                    &.logoBdsFooter:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            .ctnTextVentBdsFooter {
+                margin-left: 1.5rem;
+                .textVentBdsFooter {
+                    color: #fff;
+                    font-size: .65rem;
+                    margin-bottom: 0;
+                    font-weight: lighter;
+                }
+            }
+        }
+        .ChilFooter2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .pFollowUsFooter {
+                color: #fff;
+                font-family: sans-serif;
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+            .ctnImgSocialBdsFooter {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .aimgFooter {
+                    text-align: center;
+                    width: 35px;
+                    margin: 0 .5rem;
+                    .imgSocialBdsFooter {
+                        cursor: pointer;
+                        width: 100%;
+                        height: auto;
+                        text-align: center;
+                        margin: 0 auto;
+                        filter: invert(100%);
+                        transition: .2a all;
+                        &.imgSocialBdsFooter:hover {
+                            filter: invert(60%) sepia(36%) saturate(513%) hue-rotate(41deg) brightness(97%) contrast(95%);
+                            transition: .2s all;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

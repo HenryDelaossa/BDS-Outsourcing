@@ -1,0 +1,10 @@
+@import "index.scss";
+@import "navBar.scss";
+@import "footer.scss";
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.html {
+    scroll-behavior: smooth;
+}
