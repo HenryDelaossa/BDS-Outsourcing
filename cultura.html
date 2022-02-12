@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <title>cultura BDS</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg">
@@ -31,58 +33,72 @@
                             <a id="itmHome" class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a id="itmCultura"  class="nav-link" href="#">Cultura</a>
+                            <a id="itmCultura" class="nav-link" href="cultura.html">Cultura</a>
                         </li>
                         <li class="nav-item">
-                            <a id="itmServicios"  class="nav-link" href="#">Servicios</a>
+                            <a id="itmServicios" class="nav-link" href="#">Servicios</a>
                         </li>
 
                         <li class="nav-item">
-                            <a id="itmContacto"  class="nav-link" href="#">Contacto</a>
+                            <a id="itmContacto" class="nav-link" href="#">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- div img cultura -->
+    <div class="ctnImgHeaderCultura">
+        <img class="imgHeaderCultura" src="images/cultImg1.png" alt="Cultura BDS">
+        <div class="divh1TitCultura">
+            <h1 class="h1TitCultura">
+            </h1>
+        </div>
+    </div>
+    <!-- seccion uno cultura -->
+    <section class="sectionOneCultura container">
+        <div class="ctnDivsInfCultura">
+            <div class="ctn">
+                <div class="divInfCult">
+                    <h3 class="titInfCult">socios de nuestros clientes</h3>
+                    <p>Generamos relaciones a largo plazo con nuestros clientes y crecemos juntos con ellos.</p>
+                </div>
+                <div class="divInfCult">
+                    <h3 class="titInfCult">conocernos para establecer objetivos</h3>
+                    <p>Entender el modelo de negocio de nuestros clientes es importante para nosotros, asi establecemos interes y objetivos desde un principio.</p>
+                </div>
+            </div>
+            <div class="ctn">
+                <div class="divInfCult">
+                    <h3 class="titInfCult">estamos comprometidos</h3>
+                    <p>Con el ecosistema emprendedor que busca no solo un mejor pais sino un mundo mejor con propuestas innovadoras de negocio y proposito.</p>
+                </div>
+                <div class="divInfCult">
+                    <h3 class="titInfCult"> colaboradores felices clientes satisfechos</h3>
+                    <p>Creemos profundamente que mejorar la experiencia laboral entre nuestros colaboradores es la clave para ver reflejada la calidad en nuestro servicio.</p>
+                </div>
+            </div>
+            <div class="ctn">
+                <div class="divInfCult">
+                    <h3 class="titInfCult">siempre comunicados</h3>
+                    <p>Sabemos que la comunicacion constante con nuestros clientes nos permite conocer oportunidades de mejoras alineadas a sus objetivos.</p>
+                </div>
+                <div class="ctnDivsBolLogBds">
+                    <div class="divBolLogBds">
+                        <div class="bolLogBds"></div>
+                        <div class="bolLogBds"></div>
+                        <div class="bolLogBds"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
     <footer class="footer">
         <div class="ctnDivsFooter">
             <div class="ChilFooter1">
                 <div class="ctnLogoBdsFooter">
                     <a class="logoBdsFooter" href="#">BDS</a>
-                </div>
-                <div class="ctnTextVentBdsFooter">
-                    <p class="textVentBdsFooter">Aprovechamiento de nuevas oportunidades.</p>
-                    <p class="textVentBdsFooter">Mejor participacion en el mercado.</p>
-                    <p class="textVentBdsFooter">Acompañamiento a nuestros clientes.</p>
-                    <p class="textVentBdsFooter">Compromiso</p>
                 </div>
             </div>
             <div class="ChilFooter2">
@@ -92,7 +108,8 @@
                     </p>
                 </div>
                 <div class="ctnImgSocialBdsFooter">
-                    <a class="aimgFooter" href="#"><img class="imgSocialBdsFooter" src="images/faceIcon.png" alt="Facebook BDS-group"></a>
+                    <a class="aimgFooter" href="#"><img class="imgSocialBdsFooter" src="images/faceIcon.png"
+                            alt="Facebook BDS-group"></a>
                     <a class="aimgFooter" href="#"><img class="imgSocialBdsFooter" src="images/twitterIcon.png"
                             alt="twitter BDS-group"></a>
                     <a class="aimgFooter" href="#"><img class="imgSocialBdsFooter" src="images/instagIcon.png"
@@ -102,19 +119,16 @@
             </div>
         </div>
     </footer>
-<!-- scripts -->
-<!-- JS -->
+    <!-- scripts -->
+    <!-- JS -->
     <script>
         // pagina activa menu
         window.addEventListener("load", () => {
-            const item = document.getElementById("itmCultura"); item.style.backgroundColor = "#ffffff40"; item.style.borderRadius = "25px 3px 25px 3px";
-            // cambio de reglas css sobre el elemento activo de menu
+            const item = document.getElementById("itmCultura"); item.style.backgroundColor = "#ffffff40"; item.style.borderRadius = "20px 3px 20px 3px";
             let numHoja = document.styleSheets.length; let ultiHoja = document.styleSheets[numHoja - 1]; let contDeHoja;
-            if (ultiHoja.cssRules) { contDeHoja = ultiHoja.cssRules.length;} else if (ultiHoja.rules) { contDeHoja = ultiHoja.rules.length;}
-            let colorItemSectWindow = "#itmCultura {color: #8aac51 !important;}"; let hoverBefore = "#itmCultura:hover::before {display: none !important;}";
-            // se inserta en ultima hoja la ultima regla (colorItemsSect y hoverBefore) que sobreescribe las anteriores definidas  en css.
+            if (ultiHoja.cssRules) { contDeHoja = ultiHoja.cssRules.length; } else if (ultiHoja.rules) { contDeHoja = ultiHoja.rules.length; }
+            let colorItemSectWindow = "#itmCultura {color: #8aac51 !important;}"; let hoverBefore = "#itmCultura:hover::before {display: none !important; width: 0 !important; height: 0 !important;}";
             ultiHoja.insertRule(colorItemSectWindow, contDeHoja); ultiHoja.insertRule(hoverBefore, contDeHoja);
-            // console.log(numHoja, ultiHoja, contDeHoja,ultiHoja.cssRules)
         })
     </script>
     <script src="js/js.js"></script>
@@ -123,4 +137,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

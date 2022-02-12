@@ -1,3 +1,77 @@
+.ctnImgHeaderCultura {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  margin: 0;
+  top: -8px; }
+  .ctnImgHeaderCultura .imgHeaderCultura {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    filter: brightness(100%);
+    z-index: 0; }
+
+.sectionOneCultura {
+  width: 100%;
+  height: auto;
+  margin-top: 5rem; }
+  .sectionOneCultura .ctnDivsInfCultura {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .sectionOneCultura .ctnDivsInfCultura .ctn {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 3rem; }
+      .sectionOneCultura .ctnDivsInfCultura .ctn .divInfCult {
+        width: 35%;
+        padding-right: 5rem; }
+        .sectionOneCultura .ctnDivsInfCultura .ctn .divInfCult .titInfCult {
+          text-transform: uppercase; }
+        .sectionOneCultura .ctnDivsInfCultura .ctn .divInfCult p {
+          font-weight: 500; }
+      .sectionOneCultura .ctnDivsInfCultura .ctn .ctnDivsBolLogBds {
+        position: relative;
+        width: 35%; }
+        .sectionOneCultura .ctnDivsInfCultura .ctn .ctnDivsBolLogBds .divBolLogBds {
+          position: absolute;
+          top: 0x;
+          left: 0; }
+          .sectionOneCultura .ctnDivsInfCultura .ctn .ctnDivsBolLogBds .divBolLogBds .bolLogBds {
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            margin-left: 0;
+            background-color: #83a34f; }
+
+.ctncrecJunt {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 250px; }
+  .ctncrecJunt .imgCrecJunt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    filter: brightness(170%);
+    z-index: 0; }
+  .ctncrecJunt .DivcrecJuntos {
+    width: 100%;
+    height: auto;
+    z-index: 1; }
+    .ctncrecJunt .DivcrecJuntos .h1CrecJuntos {
+      color: #141f3b;
+      font-weight: bold;
+      font-size: 4rem;
+      font-family: 'roboto', sans-serif;
+      text-align: center; }
+
 .sectOne {
   width: 100%;
   padding: 4rem 1rem;
@@ -100,7 +174,7 @@
               font-size: 7rem;
               font-weight: bold;
               transform: rotate(180deg);
-              font-family: 'Festive', cursive;
+              font-family: "Festive", cursive;
               position: absolute;
               top: 80%;
               left: -40px; }
@@ -140,82 +214,165 @@
       background-size: contain;
       background-position: center; }
 
-.header .navbar {
-  background-color: #141f3b; }
-  .header .navbar .container-fluid {
+.sectionFormIndex {
+  margin-top: 3rem; }
+  .sectionFormIndex .container {
     display: flex;
-    justify-content: space-between #8aac51;
-    /* Logo BDS */ }
-    .header .navbar .container-fluid .navbar-brand {
-      color: #fff;
-      font-size: 3rem;
-      padding: 0;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-      font-style: oblique;
-      font-weight: bold;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 100px; }
+    .sectionFormIndex .container .divTitinfContact {
       position: relative;
-      transition: 0.2s all; }
-      .header .navbar .container-fluid .navbar-brand.navbar-brand::before {
-        content: "";
+      width: 100%; }
+      .sectionFormIndex .container .divTitinfContact .titContact {
+        font-weight: bold;
+        font-size: 2rem; }
+      .sectionFormIndex .container .divTitinfContact .pinfoCampOblig {
+        font-size: 0.9rem; }
+      .sectionFormIndex .container .divTitinfContact .pInfConsulta {
+        font-weight: bold; }
+      .sectionFormIndex .container .divTitinfContact .divBolLogContact {
         position: absolute;
-        left: 0;
-        bottom: 10%;
+        top: 10px;
+        left: 200px; }
+        .sectionFormIndex .container .divTitinfContact .divBolLogContact div {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: #83a34f; }
+  .sectionFormIndex .formContact {
+    width: 100%; }
+    .sectionFormIndex .formContact .fieldsetFormContact .labelForm {
+      display: block;
+      font-family: "roboto", sans-serif;
+      cursor: pointer; }
+    .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 2rem; }
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divNombre,
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido {
+        width: 47%; }
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divNombre .inptNombre,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divNombre .inptApellido,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido .inptNombre,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido .inptApellido {
+          width: 100%;
+          padding: 0.3rem; }
+    .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 2rem; }
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divEmail,
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono {
+        width: 47%; }
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divEmail .inptEmail,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divEmail .inptTelefono,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono .inptEmail,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono .inptTelefono {
+          width: 100%;
+          padding: 0.3rem; }
+    .sectionFormIndex .formContact .fieldsetFormContact .divTextmensaje {
+      margin-bottom: 2rem;
+      width: 100%; }
+      .sectionFormIndex .formContact .fieldsetFormContact .divTextmensaje .txtMensaje {
         width: 100%;
-        height: 3px;
-        border-radius: 5px 1px 5px 1px;
-        background-color: #fff;
+        height: 100px;
+        resize: none;
+        padding: 1rem; }
+    .sectionFormIndex .formContact .fieldsetFormContact .divBtnSubmit .btnSubmitFormContact {
+      background-color: #141f3b;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      padding: 0.3rem;
+      transition: 0.3s all; }
+      .sectionFormIndex .formContact .fieldsetFormContact .divBtnSubmit .btnSubmitFormContact:hover {
+        color: #83a34f; }
+
+.header {
+  margin-bottom: 0; }
+  .header .navbar {
+    background-color: #141f3b; }
+    .header .navbar .container-fluid {
+      display: flex;
+      justify-content: space-between #8aac51;
+      /* Logo BDS */ }
+      .header .navbar .container-fluid .navbar-brand {
+        color: #fff;
+        font-size: 3rem;
+        padding: 0;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        position: relative;
         transition: 0.2s all; }
-      .header .navbar .container-fluid .navbar-brand.navbar-brand::after {
-        content: "";
-        position: absolute;
-        left: unset;
-        right: -8px;
-        top: 25%;
-        width: 3.5px;
-        height: 57%;
-        border-radius: 5px 1px 5px 1px;
-        background-color: #fff;
-        transition: 0.2s all; }
-      .header .navbar .container-fluid .navbar-brand.navbar-brand:hover {
-        color: #8aac51;
-        transition: 0.2s all; }
-    .header .navbar .container-fluid .navbar-toggler {
-      background-color: #8aac51; }
-      .header .navbar .container-fluid .navbar-toggler.navbar-toggler:focus {
-        box-shadow: none; }
-      .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
-        background-image: none;
-        position: relative; }
-        .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon.outLinesBackspn {
-          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2820, 31, 59, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
-        .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav {
-          display: block;
-          transition: 0.3s all; }
-          .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav.ctnSpanNavInac {
-            display: none;
+        .header .navbar .container-fluid .navbar-brand.navbar-brand::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 10%;
+          width: 100%;
+          height: 3px;
+          border-radius: 5px 1px 5px 1px;
+          background-color: #fff;
+          transition: 0.2s all; }
+        .header .navbar .container-fluid .navbar-brand.navbar-brand::after {
+          content: "";
+          position: absolute;
+          left: unset;
+          right: -8px;
+          top: 25%;
+          width: 3.5px;
+          height: 57%;
+          border-radius: 5px 1px 5px 1px;
+          background-color: #fff;
+          transition: 0.2s all; }
+        .header .navbar .container-fluid .navbar-brand.navbar-brand:hover {
+          color: #8aac51;
+          transition: 0.2s all; }
+      .header .navbar .container-fluid .navbar-toggler {
+        background-color: #8aac51; }
+        .header .navbar .container-fluid .navbar-toggler.navbar-toggler:focus {
+          box-shadow: none; }
+        .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+          background-image: none;
+          position: relative; }
+          .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon.outLinesBackspn {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2820, 31, 59, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+          .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav {
+            display: block;
             transition: 0.3s all; }
-          .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav .spann1 {
-            width: 100%;
-            height: 3px;
-            background-color: #141f3b;
-            position: absolute;
-            border-radius: 2px;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, 50%) rotate(-45deg);
-            transition: 0.3s all;
-            animation: spann1 0.2s linear 1 normal; }
-          .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav .spann2 {
-            width: 100%;
-            height: 3px;
-            background-color: #141f3b;
-            position: absolute;
-            border-radius: 2px;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, 50%) rotate(45deg);
-            transition: 0.3s all;
-            animation: spann2 0.2s linear 1 normal; }
+            .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav.ctnSpanNavInac {
+              display: none;
+              transition: 0.3s all; }
+            .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav .spann1 {
+              width: 100%;
+              height: 3px;
+              background-color: #141f3b;
+              position: absolute;
+              border-radius: 2px;
+              top: 40%;
+              left: 50%;
+              transform: translate(-50%, 50%) rotate(-45deg);
+              transition: 0.3s all;
+              animation: spann1 0.2s linear 1 normal; }
+            .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav .spann2 {
+              width: 100%;
+              height: 3px;
+              background-color: #141f3b;
+              position: absolute;
+              border-radius: 2px;
+              top: 40%;
+              left: 50%;
+              transform: translate(-50%, 50%) rotate(45deg);
+              transition: 0.3s all;
+              animation: spann2 0.2s linear 1 normal; }
 
 @keyframes spann1 {
   0% {
@@ -228,77 +385,51 @@
     transform: translate(50%); }
   100% {
     transform: translate(-50%, 50%) rotate(-45deg); } }
-    .header .navbar .container-fluid .navbar-nav {
-      margin-right: 4rem; }
-      .header .navbar .container-fluid .navbar-nav .nav-link {
-        color: #b7bbc3;
-        margin-right: 1rem;
-        position: relative; }
-        .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:hover {
-          color: #8aac51; }
-        .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:focus {
-          color: #8aac51; }
-        .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:focus-visible {
-          outline: none;
-          outline-color: none;
-          outline-style: none;
-          outline-width: 0; }
-        .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:hover::before {
-          content: "";
-          position: absolute;
+      .header .navbar .container-fluid .navbar-nav {
+        margin-right: 4rem; }
+        .header .navbar .container-fluid .navbar-nav .nav-link {
+          color: #b7bbc3;
           margin-right: 1rem;
-          left: 0;
-          width: 95%;
-          bottom: 3px;
-          height: 3px;
-          transition: 0.3s all;
-          background-color: #8aac51;
-          animation-name: befItemsmen;
-          animation-duration: 0.2s; }
-        .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:focus::before {
-          content: "";
-          position: absolute;
-          margin-right: 1rem;
-          left: 0;
-          width: 95%;
-          bottom: 3px;
-          height: 3px;
-          transition: 0.3s all;
-          background-color: #8aac51;
-          animation-name: befItemsmen;
-          animation-duration: 0.2s; }
+          position: relative; }
+          .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:hover {
+            color: #8aac51; }
+          .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:focus {
+            color: #8aac51; }
+          .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:focus-visible {
+            outline: none;
+            outline-color: none;
+            outline-style: none;
+            outline-width: 0; }
+          .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:hover::before {
+            content: "";
+            position: absolute;
+            margin-right: 1rem;
+            left: 0;
+            width: 95%;
+            bottom: 3px;
+            height: 3px;
+            transition: 0.3s all;
+            background-color: #8aac51;
+            animation-name: befItemsmen;
+            animation-duration: 0.2s; }
+          .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:focus::before {
+            content: "";
+            position: absolute;
+            margin-right: 1rem;
+            left: 0;
+            width: 95%;
+            bottom: 3px;
+            height: 3px;
+            transition: 0.3s all;
+            background-color: #8aac51;
+            animation-name: befItemsmen;
+            animation-duration: 0.2s; }
 
 @keyframes befItemsmen {
   0% {
     width: 0%; }
   100% {
     width: 95%; } }
-
-.header .ctncrecJunt {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 250px; }
-  .header .ctncrecJunt .imgCrecJunt {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: .8;
-    filter: brightness(220%);
-    z-index: 0; }
-  .header .ctncrecJunt .DivcrecJuntos {
-    width: 100%;
-    height: auto;
-    z-index: 1; }
-    .header .ctncrecJunt .DivcrecJuntos .h1CrecJuntos {
-      color: #141f3b;
-      font-weight: bold;
-      font-size: 4rem;
-      font-family: 'roboto', sans-serif;
-      text-align: center; }
 
 .footer {
   background-color: #141f3b;
@@ -385,5 +516,7 @@
   box-sizing: border-box;
   margin: 0; }
 
-.html {
+html {
   scroll-behavior: smooth; }
+  html body {
+    box-sizing: border-box; }

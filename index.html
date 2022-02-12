@@ -51,21 +51,21 @@
                 </div>
             </div>
         </nav>
-        <div class="ctncrecJunt container-fluid">
-            <img class="imgCrecJunt" src="images/ind1.png" alt="creciento juntos BDS">
-            <div class="DivcrecJuntos">
-                <h1 class="h1CrecJuntos">
-                    Creciendo juntos
-                </h1>
-            </div>
-
-        </div>
     </header>
+    <div class="ctncrecJunt">
+        <img class="imgCrecJunt" src="images/ind1.png" alt="creciento juntos BDS">
+        <div class="DivcrecJuntos">
+            <h1 class="h1CrecJuntos">
+                Creciendo juntos
+            </h1>
+        </div>
+    </div>
     <!-- seccion 1 articulos index -->
     <section class="sectOne">
         <div class="articles">
             <h3>Articulos</h3>
-            <p>Si te interesa conocer más sobre economia te invitamos a que leas las notas que publicamos de manera regular en nuestro blog exclusivo</p>
+            <p>Si te interesa conocer más sobre economia te invitamos a que leas las notas que publicamos de manera
+                regular en nuestro blog exclusivo</p>
             <button class="btnVerMas">Ver más</button>
         </div>
         <div class="divImgArticles">
@@ -156,19 +156,53 @@
         </div>
     </section>
     <!-- seccion tres formulario de contacto -->
-    <section>
-        <div>
-            <form action="">
-                <fieldset>
-
+    <section class="sectionFormIndex">
+        <div class="container">
+            <div class="divTitinfContact">
+                <h3 class="titContact">Contactanos </h3>
+                <p class="pInfConsulta">si tienes alguna duda o cunsulta no dudes en escribirnos</p>
+                <p class="pinfoCampOblig">Los campos marcados con asterisco son obigatorios *</p>
+                <div class="divBolLogContact">
+                    <div class="bolLogContact"></div>
+                    <div class="bolLogContact"></div>
+                    <div class="bolLogContact"></div>
+                </div>
+            </div>
+            <form class="formContact">
+                <fieldset class="fieldsetFormContact">
+                    <div class="divInptsNombreApellido">
+                        <div class="divNombre">
+                            <label class="labelForm labelNombre" for="inptNombre">Nombre*</label>
+                            <input type="text" name="inptNombre" class="inptNombre" id="inptNombre" required>
+                        </div>
+                        <div class="divApellido">
+                            <label class="labelForm labelapellido" for="inptApellido">apellido*</label>
+                            <input type="text" name="inptApellido" class="inptApellido" id="inptApellido" required>
+                        </div>
+                    </div>
+                    <div class="divInptsEmailtelefono">
+                        <div class="divEmail">
+                            <label class="labelForm labelEmail" for="inptEmail">Email*</label>
+                            <input type="text" name="inptEmail" class="inptEmail" id="inptEmail" required>
+                        </div>
+                        <div class="divTelefono">
+                            <label class="labelForm labeltelefono" for="inptTelefono">Telefono</label>
+                            <input type="text" name="inptTelefono" class="inptTelefono" id="inptTelefono">
+                        </div>
+                    </div>
+                    <div class="divTextmensaje">
+                        <label for="labelMensaje" class="labelForm labelTxtMensaje" >Mensaje*</label>
+                        <textarea name="labelMensaje" class="txtMensaje" id="labelMensaje" required></textarea>
+                    </div>
+                    <div class="divBtnSubmit">
+                        <button type="submit" class="btnSubmitFormContact">Enviar</button>
+                    </div>
                 </fieldset>
             </form>
+
         </div>
     </section>
-
-
-
-
+<!-- footer Index -->
     <footer class="footer ">
         <div class="ctnDivsFooter">
             <div class="ChilFooter1">
@@ -198,14 +232,11 @@
     <script>
         // pagina activa menu
         window.addEventListener("load", () => {
-            const item = document.getElementById("itmHome"); item.style.backgroundColor = "#ffffff40"; item.style.borderRadius = "25px 3px 25px 3px";
-            // cambio de reglas css sobre el elemento activo de menu
+            const item = document.getElementById("itmHome"); item.style.backgroundColor = "#ffffff40"; item.style.borderRadius = "20px 3px 20px 3px";
             let numHoja = document.styleSheets.length; let ultiHoja = document.styleSheets[numHoja - 1]; let contDeHoja;
             if (ultiHoja.cssRules) { contDeHoja = ultiHoja.cssRules.length; } else if (ultiHoja.rules) { contDeHoja = ultiHoja.rules.length; }
             let colorItemSectWindow = "#itmHome {color: #8aac51 !important;}"; let hoverBefore = "#itmHome:hover::before {display: none !important;}";
-            // se inserta en iltima hoja la ultima regla (colorItemsSect y hoverBefore) que anulas sobreescribe las anteriores definidas  en css.
             ultiHoja.insertRule(colorItemSectWindow, contDeHoja); ultiHoja.insertRule(hoverBefore, contDeHoja);
-            // console.log(numHoja, ultiHoja, contDeHoja,ultiHoja.cssRules)
         })
     </script>
     <script src="js/js.js"></script>

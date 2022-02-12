@@ -1,4 +1,5 @@
 .header {
+  margin-bottom: 0;
   .navbar {
     background-color: #141f3b;
     .container-fluid {
@@ -159,41 +160,5 @@
         }
       }
     }
-  }
-  .ctncrecJunt {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 250px;
-    .imgCrecJunt {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      opacity: .8;
-      filter: brightness(220%);
-      z-index: 0;
-    }
-    .DivcrecJuntos {
-      width: 100%;
-      height: auto;
-      z-index: 1;
-      .h1CrecJuntos {
-        color: #141f3b;
-        font-weight: bold;
-        font-size: 4rem;
-        font-family: 'roboto', sans-serif;
-        text-align: center;
-      }
-    }
-    // &.ctncrecJunt::before {
-    //   content: "";
-    //   background-color: #b7bbc350;
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 100%;
-    // }
   }
 }

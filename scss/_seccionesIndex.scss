@@ -1,3 +1,33 @@
+// contenido imagen cabecera
+.ctncrecJunt {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  .imgCrecJunt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    filter: brightness(170%);
+    z-index: 0;
+  }
+  .DivcrecJuntos {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    .h1CrecJuntos {
+      color: #141f3b;
+      font-weight: bold;
+      font-size: 4rem;
+      font-family: 'roboto', sans-serif;
+      text-align: center;
+    }
+  }
+}
 // seccion uno
 .sectOne {
   width: 100%;
@@ -88,9 +118,9 @@
           display: flex;
           justify-content: center;
           z-index: 1;
-          
+
           .imgRecomend {
-            width: 100% ;
+            width: 100%;
             height: auto;
             border: 1px solid #141f3b;
           }
@@ -116,7 +146,7 @@
               font-size: 7rem;
               font-weight: bold;
               transform: rotate(180deg);
-              font-family: 'Festive', cursive;
+              font-family: "Festive", cursive;
               position: absolute;
               top: 80%;
               left: -40px;
@@ -132,7 +162,7 @@
     .carousel-indicators {
       width: 10%;
       height: 10%;
-      
+
       margin: 0;
       display: flex;
       justify-content: center;
@@ -161,7 +191,6 @@
       background-size: contain;
       background-position: center;
       margin-right: 4rem;
-      
     }
     .carousel-control-next-icon {
       opacity: 1;
@@ -170,5 +199,109 @@
       background-position: center;
     }
   }
-  
+}
+
+// seccion formulario de contacto index
+.sectionFormIndex {
+  margin-top: 3rem;
+  // titulo e info previa
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 100px;
+    .divTitinfContact {
+      position: relative;
+      width: 100%;
+      .titContact {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+      .pinfoCampOblig {
+        font-size: 0.9rem;
+      }
+      .pInfConsulta {
+        font-weight: bold;
+      }
+      .divBolLogContact {
+        position: absolute;
+        top: 10px;
+        left: 200px;
+        div {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          background-color: #83a34f;
+        }
+      }
+    }
+  }
+// formulario
+  .formContact {
+    width: 100%;
+    .fieldsetFormContact {
+      .labelForm {
+        display: block;
+        font-family: $fuentePrincipal;
+        cursor: pointer;
+      }
+      .divInptsNombreApellido {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2rem;
+        .divNombre,
+        .divApellido {
+          width: 47%;
+          .inptNombre,
+          .inptApellido {
+            width: 100%;
+            padding: 0.3rem;
+          }
+        }
+      }
+      .divInptsEmailtelefono {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2rem;
+        .divEmail,
+        .divTelefono {
+          width: 47%;
+          .inptEmail,
+          .inptTelefono {
+            width: 100%;
+            padding: 0.3rem;
+          }
+        }
+      }
+      .divTextmensaje {
+        margin-bottom: 2rem;
+        width: 100%;
+        .txtMensaje {
+          width: 100%;
+          height: 100px;
+          resize: none;
+          padding: 1rem;
+        }
+      }
+      // boton enviar
+      .divBtnSubmit {
+        .btnSubmitFormContact {
+          background-color: #141f3b;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+          padding: 0.3rem;
+          transition: 0.3s all;
+          &:hover {
+            color: #83a34f;
+          }
+        }
+      }
+    }
+  }
 }
