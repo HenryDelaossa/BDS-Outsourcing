@@ -44,11 +44,6 @@
                 </div>
             </div>
         </nav>
-        <div class="DivcrecJuntos">
-            <h1 class="h1CrecJuntos">
-                Creciendo juntos
-            </h1>
-        </div>
     </header>
 
 
@@ -107,16 +102,8 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-    
+<!-- scripts -->
+<!-- JS -->
     <script>
         // pagina activa menu
         window.addEventListener("load", () => {
@@ -125,12 +112,13 @@
             let numHoja = document.styleSheets.length; let ultiHoja = document.styleSheets[numHoja - 1]; let contDeHoja;
             if (ultiHoja.cssRules) { contDeHoja = ultiHoja.cssRules.length;} else if (ultiHoja.rules) { contDeHoja = ultiHoja.rules.length;}
             let colorItemSectWindow = "#itmCultura {color: #8aac51 !important;}"; let hoverBefore = "#itmCultura:hover::before {display: none !important;}";
-            // se inserta en iltima hoja la ultima regla (colorItemsSect y hoverBefore) que anulas sobreescribe las anteriores definidas  en css.
+            // se inserta en ultima hoja la ultima regla (colorItemsSect y hoverBefore) que sobreescribe las anteriores definidas  en css.
             ultiHoja.insertRule(colorItemSectWindow, contDeHoja); ultiHoja.insertRule(hoverBefore, contDeHoja);
             // console.log(numHoja, ultiHoja, contDeHoja,ultiHoja.cssRules)
         })
     </script>
     <script src="js/js.js"></script>
+    <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

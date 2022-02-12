@@ -1,5 +1,144 @@
-.body {
-  background-color: #fff; }
+.sectOne {
+  width: 100%;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sectOne .articles {
+    width: 35%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 4rem; }
+    .sectOne .articles h3 {
+      font-family: "roboto", sans-serif;
+      font-weight: bold;
+      color: #141f3b;
+      margin-bottom: 1rem; }
+    .sectOne .articles p {
+      font-family: sans-serif;
+      margin-bottom: 1.5rem; }
+    .sectOne .articles button {
+      width: 100px;
+      height: 50px;
+      background-color: #141f3b;
+      border: none;
+      border-radius: 15px;
+      color: white; }
+      .sectOne .articles button:hover {
+        color: #83a34f; }
+  .sectOne .divImgArticles {
+    width: 35%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .sectOne .divImgArticles .imgArticles {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0px 0px 13px 0px #000000; }
+
+.sectTwo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem; }
+  .sectTwo .carousel {
+    width: 100%; }
+    .sectTwo .carousel .carousel-inner {
+      height: 450px; }
+      .sectTwo .carousel .carousel-inner .carousel-item {
+        height: 100%; }
+    .sectTwo .carousel .ctnRecomend {
+      height: 100%;
+      position: relative; }
+      .sectTwo .carousel .ctnRecomend .imgBackRecomend {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0; }
+      .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%; }
+        .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divImgRecomend {
+          width: 35%;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+          z-index: 1; }
+          .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divImgRecomend .imgRecomend {
+            width: 100%;
+            height: auto;
+            border: 1px solid #141f3b; }
+        .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend {
+          z-index: 5;
+          width: 35%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding: 1rem;
+          margin-right: 2rem; }
+          .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend h3 {
+            color: #fff;
+            margin-bottom: 2rem; }
+          .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend p {
+            color: #fff;
+            position: relative; }
+            .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend p .comilRecomend {
+              margin: 0;
+              height: 0;
+              font-size: 7rem;
+              font-weight: bold;
+              transform: rotate(180deg);
+              font-family: 'Festive', cursive;
+              position: absolute;
+              top: 80%;
+              left: -40px; }
+          .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend .logoRecomend {
+            width: 30%;
+            height: auto; }
+    .sectTwo .carousel .carousel-indicators {
+      width: 10%;
+      height: 10%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 30px;
+      left: unset;
+      right: 30px; }
+    .sectTwo .carousel .indicadores {
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+      margin: 2px;
+      opacity: 1; }
+    .sectTwo .carousel .active {
+      background-color: #83a34f; }
+    .sectTwo .carousel .carousel-control-next {
+      color: #83a34f; }
+    .sectTwo .carousel .carousel-control-prev-icon {
+      opacity: 1;
+      background-image: url("/images/prev.png");
+      background-size: contain;
+      background-position: center;
+      margin-right: 4rem; }
+    .sectTwo .carousel .carousel-control-next-icon {
+      opacity: 1;
+      background-image: url("/images/next.png");
+      background-size: contain;
+      background-position: center; }
 
 .header .navbar {
   background-color: #141f3b; }
@@ -51,10 +190,10 @@
           background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2820, 31, 59, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
         .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav {
           display: block;
-          transition: .3s all; }
+          transition: 0.3s all; }
           .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav.ctnSpanNavInac {
             display: none;
-            transition: .3s all; }
+            transition: 0.3s all; }
           .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav .spann1 {
             width: 100%;
             height: 3px;
@@ -64,8 +203,8 @@
             top: 40%;
             left: 50%;
             transform: translate(-50%, 50%) rotate(-45deg);
-            transition: .3s all;
-            animation: spann1 .2s linear 1 normal; }
+            transition: 0.3s all;
+            animation: spann1 0.2s linear 1 normal; }
           .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon .ctnSpanNav .spann2 {
             width: 100%;
             height: 3px;
@@ -75,8 +214,8 @@
             top: 40%;
             left: 50%;
             transform: translate(-50%, 50%) rotate(45deg);
-            transition: .3s all;
-            animation: spann2 .2s linear 1 normal; }
+            transition: 0.3s all;
+            animation: spann2 0.2s linear 1 normal; }
 
 @keyframes spann1 {
   0% {
@@ -112,10 +251,10 @@
           width: 95%;
           bottom: 3px;
           height: 3px;
-          transition: .3s all;
+          transition: 0.3s all;
           background-color: #8aac51;
           animation-name: befItemsmen;
-          animation-duration: .2s; }
+          animation-duration: 0.2s; }
         .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:focus::before {
           content: "";
           position: absolute;
@@ -124,10 +263,10 @@
           width: 95%;
           bottom: 3px;
           height: 3px;
-          transition: .3s all;
+          transition: 0.3s all;
           background-color: #8aac51;
           animation-name: befItemsmen;
-          animation-duration: .2s; }
+          animation-duration: 0.2s; }
 
 @keyframes befItemsmen {
   0% {
@@ -135,23 +274,36 @@
   100% {
     width: 95%; } }
 
-.header .DivcrecJuntos {
-  width: 100%;
-  height: 200px;
+.header .ctncrecJunt {
   display: flex;
+  position: relative;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("/images/crecJuntosBds.png"); }
+  width: 100%;
+  height: 250px; }
+  .header .ctncrecJunt .imgCrecJunt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    filter: brightness(220%);
+    z-index: 0; }
+  .header .ctncrecJunt .DivcrecJuntos {
+    width: 100%;
+    height: auto;
+    z-index: 1; }
+    .header .ctncrecJunt .DivcrecJuntos .h1CrecJuntos {
+      color: #141f3b;
+      font-weight: bold;
+      font-size: 4rem;
+      font-family: 'roboto', sans-serif;
+      text-align: center; }
 
 .footer {
   background-color: #141f3b;
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
+  width: 100%;
+  margin-top: 3rem; }
   .footer .ctnDivsFooter {
     display: flex;
     justify-content: space-between;
