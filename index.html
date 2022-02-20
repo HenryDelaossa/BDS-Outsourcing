@@ -21,7 +21,8 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">BDS</a>
+                <a class="navbar-brand" href="index.html"><img src="/images/logobdsnw.jfif"
+                        alt="logotipo grupo BDS"></a>
                 <button id="btnNavTogg" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -64,9 +65,10 @@
     <section class="sectOne">
         <div class="articles">
             <h3>Articulos</h3>
-            <p>Si te interesa conocer más sobre economia te invitamos a que leas las notas que publicamos de manera
+            <p id="pverMas" class="pVerMas">Si te interesa conocer más sobre economia te invitamos a que leas las notas que publicamos
+                de manera
                 regular en nuestro blog exclusivo</p>
-            <button class="btnVerMas">Ver más</button>
+            <button id="btnVerMas" class="btnVerMas">Ver más</button>
         </div>
         <div class="divImgArticles">
             <img class="imgArticles" src="images/sectInd1.png" alt="">
@@ -258,6 +260,14 @@
             if (ultiHoja.cssRules) { contDeHoja = ultiHoja.cssRules.length; } else if (ultiHoja.rules) { contDeHoja = ultiHoja.rules.length; }
             let colorItemSectWindow = "#itmHome {color: #8aac51 !important;}"; let hoverBefore = "#itmHome:hover::before {display: none !important;}";
             ultiHoja.insertRule(colorItemSectWindow, contDeHoja); ultiHoja.insertRule(hoverBefore, contDeHoja);
+        })
+        // boton ver mas
+        let pverMas = document.getElementById("pverMas")
+        let btnVerMas = document.getElementById("btnVerMas")
+        btnVerMas.addEventListener("click", () => {
+            if (window.innerWidth <= 768) {
+                pverMas.classList.toggle("pVerMasNon")
+            }
         })
     </script>
     <script src="js/js.js"></script>

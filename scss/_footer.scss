@@ -5,12 +5,13 @@
     .ctnDivsFooter {
         display: flex;
         justify-content: space-between;
-        margin: 0 4rem;
+        margin: 0 auto;
         .ChilFooter1 {
             display: flex;
             justify-content: center;
             align-items: center;
             .ctnLogoBdsFooter {
+                margin-left: 1rem;
                 text-align: center;
                 .logoBdsFooter {
                     text-decoration: none;
@@ -45,15 +46,6 @@
                     &.logoBdsFooter:hover {
                         color: #fff;
                     }
-                }
-            }
-            .ctnTextVentBdsFooter {
-                margin-left: 1.5rem;
-                .textVentBdsFooter {
-                    color: #fff;
-                    font-size: .65rem;
-                    margin-bottom: 0;
-                    font-weight: lighter;
                 }
             }
         }

@@ -12,6 +12,10 @@
     filter: brightness(100%);
     z-index: 0; }
 
+@media screen and (max-width: 768px) {
+  .ctnImgHeaderCultura {
+    display: none; } }
+
 .sectionOneCultura {
   width: 100%;
   height: auto;
@@ -25,12 +29,21 @@
       justify-content: space-around;
       margin-bottom: 3rem; }
       .sectionOneCultura .ctnDivsInfCultura .ctn .divInfCult {
+        position: relative;
         width: 35%;
-        padding-right: 5rem; }
+        padding-right: 4rem; }
         .sectionOneCultura .ctnDivsInfCultura .ctn .divInfCult .titInfCult {
           text-transform: uppercase; }
         .sectionOneCultura .ctnDivsInfCultura .ctn .divInfCult p {
           font-weight: 500; }
+        .sectionOneCultura .ctnDivsInfCultura .ctn .divInfCult div {
+          width: 115px;
+          height: 115px;
+          border-radius: 50%;
+          background-color: #83a34f59;
+          position: absolute;
+          top: -30px;
+          left: -36px; }
       .sectionOneCultura .ctnDivsInfCultura .ctn .ctnDivsBolLogBds {
         position: relative;
         width: 35%; }
@@ -45,6 +58,25 @@
             margin-bottom: 5px;
             margin-left: 0;
             background-color: #83a34f; }
+
+@media screen and (max-width: 1024px) {
+  .sectionOneCultura .ctnDivsInfCultura .ctn .divInfCult {
+    width: 100%; }
+    .sectionOneCultura .ctnDivsInfCultura .ctn .divInfCult div {
+      width: 80px;
+      height: 80px;
+      top: -10px; }
+  .sectionOneCultura .ctnDivsInfCultura .ctn .ctnDivsBolLogBds {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .sectionOneCultura .ctnDivsInfCultura .ctn {
+    flex-direction: column; }
+    .sectionOneCultura .ctnDivsInfCultura .ctn .divInfCult {
+      width: 100%;
+      padding: 0; }
+    .sectionOneCultura .ctnDivsInfCultura .ctn .ctnDivsBolLogBds {
+      width: 100%; } }
 
 .ctncrecJunt {
   display: flex;
@@ -101,9 +133,14 @@
       font-weight: bold;
       color: #141f3b;
       margin-bottom: 1rem; }
-    .sectOne .articles p {
-      font-family: sans-serif;
-      margin-bottom: 1.5rem; }
+    .sectOne .articles .pVerMas {
+      display: none;
+      transition: .3s all; }
+      .sectOne .articles .pVerMas.pVerMasNon {
+        display: block;
+        transition: .3s all;
+        font-family: sans-serif;
+        margin-bottom: 1.5rem; }
     .sectOne .articles button {
       width: 100px;
       height: 50px;
@@ -438,38 +475,11 @@
       justify-content: space-between #8aac51;
       /* Logo BDS */ }
       .header .navbar .container-fluid .navbar-brand {
-        color: #fff;
-        font-size: 3rem;
-        padding: 0;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        font-style: oblique;
-        font-weight: bold;
-        position: relative;
+        width: 150px;
         transition: 0.2s all; }
-        .header .navbar .container-fluid .navbar-brand.navbar-brand::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: 10%;
+        .header .navbar .container-fluid .navbar-brand img {
           width: 100%;
-          height: 3px;
-          border-radius: 5px 1px 5px 1px;
-          background-color: #fff;
-          transition: 0.2s all; }
-        .header .navbar .container-fluid .navbar-brand.navbar-brand::after {
-          content: "";
-          position: absolute;
-          left: unset;
-          right: -8px;
-          top: 25%;
-          width: 3.5px;
-          height: 57%;
-          border-radius: 5px 1px 5px 1px;
-          background-color: #fff;
-          transition: 0.2s all; }
-        .header .navbar .container-fluid .navbar-brand.navbar-brand:hover {
-          color: #8aac51;
-          transition: 0.2s all; }
+          border-radius: 10px; }
       .header .navbar .container-fluid .navbar-toggler {
         background-color: #8aac51; }
         .header .navbar .container-fluid .navbar-toggler.navbar-toggler:focus {
@@ -574,6 +584,19 @@
       .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:hover::before {
         width: 100%; } }
 
+@media screen and (max-width: 768px) {
+  .header .navbar .container-fluid {
+    flex-direction: column; }
+    .header .navbar .container-fluid .navbar-brand {
+      margin-bottom: 2rem; }
+    .header .navbar .container-fluid .navbar-collapse {
+      width: 100%; }
+      .header .navbar .container-fluid .navbar-collapse .navbar-nav {
+        width: 100%;
+        margin: 0 auto; }
+        .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+          width: 100%; } }
+
 .footer {
   background-color: #141f3b;
   width: 100%;
@@ -581,12 +604,13 @@
   .footer .ctnDivsFooter {
     display: flex;
     justify-content: space-between;
-    margin: 0 4rem; }
+    margin: 0 auto; }
     .footer .ctnDivsFooter .ChilFooter1 {
       display: flex;
       justify-content: center;
       align-items: center; }
       .footer .ctnDivsFooter .ChilFooter1 .ctnLogoBdsFooter {
+        margin-left: 1rem;
         text-align: center; }
         .footer .ctnDivsFooter .ChilFooter1 .ctnLogoBdsFooter .logoBdsFooter {
           text-decoration: none;
@@ -618,13 +642,6 @@
             background-color: #fff; }
           .footer .ctnDivsFooter .ChilFooter1 .ctnLogoBdsFooter .logoBdsFooter.logoBdsFooter:hover {
             color: #fff; }
-      .footer .ctnDivsFooter .ChilFooter1 .ctnTextVentBdsFooter {
-        margin-left: 1.5rem; }
-        .footer .ctnDivsFooter .ChilFooter1 .ctnTextVentBdsFooter .textVentBdsFooter {
-          color: #fff;
-          font-size: .65rem;
-          margin-bottom: 0;
-          font-weight: lighter; }
     .footer .ctnDivsFooter .ChilFooter2 {
       display: flex;
       flex-direction: column;

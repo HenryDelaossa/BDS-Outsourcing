@@ -67,9 +67,15 @@
       color: #141f3b;
       margin-bottom: 1rem;
     }
-    p {
-      font-family: sans-serif;
+    .pVerMas {
+      display: none;
+      transition: .3s all;
+      &.pVerMasNon {
+        display: block;
+        transition: .3s all;
+        font-family: sans-serif;
       margin-bottom: 1.5rem;
+      }
     }
     button {
       width: 100px;
