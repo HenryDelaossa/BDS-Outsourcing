@@ -58,7 +58,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: .8;
+    opacity: 0.8;
     filter: brightness(200%);
     z-index: 0; }
   .ctncrecJunt .DivcrecJuntos {
@@ -69,8 +69,18 @@
       color: #141f3b;
       font-weight: bold;
       font-size: 4rem;
-      font-family: 'roboto', sans-serif;
+      font-family: "roboto", sans-serif;
       text-align: center; }
+
+@media screen and (max-width: 1023px) {
+  .ctncrecJunt {
+    height: 200px; }
+    .ctncrecJunt .DivcrecJuntos .h1CrecJuntos {
+      font-size: 3rem; } }
+
+@media screen and (max-width: 768px) {
+  .ctncrecJunt {
+    display: none; } }
 
 .sectOne {
   width: 100%;
@@ -115,6 +125,27 @@
       margin: 0 auto;
       border-radius: 10px;
       box-shadow: 0px 0px 13px 0px #000000; }
+
+@media screen and (max-width: 1023px) {
+  .sectOne .articles {
+    padding-right: 0;
+    align-items: center; }
+    .sectOne .articles .btnVerMas {
+      width: 70px;
+      height: 40px; }
+  .sectOne .divImgArticles {
+    width: 38%; } }
+
+@media screen and (max-width: 768px) {
+  .sectOne {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    justify-content: space-around;
+    height: 180px; }
+    .sectOne .articles p {
+      display: none; }
+    .sectOne .divImgArticles {
+      width: 50%; } }
 
 .sectTwo {
   width: 100%;
@@ -176,7 +207,7 @@
               transform: rotate(180deg);
               font-family: "Festive", cursive;
               position: absolute;
-              top: 80%;
+              top: 50%;
               left: -40px; }
           .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend .logoRecomend {
             width: 30%;
@@ -215,6 +246,68 @@
       background-size: contain;
       background-position: center;
       z-index: 6; }
+
+@media screen and (max-width: 1023px) {
+  .sectTwo .carousel .carousel-inner {
+    height: 380px; }
+  .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend {
+    justify-content: center; }
+    .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divImgRecomend {
+      align-items: center; }
+      .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divImgRecomend .imgRecomend {
+        height: 60%; }
+    .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend {
+      margin-left: 2rem; }
+      .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend p .comilRecomend {
+        top: 45%; }
+  .sectTwo .carousel .carousel-indicators {
+    width: 100%;
+    top: unset;
+    left: 0;
+    bottom: 0; }
+  .sectTwo .carousel .indicadores {
+    margin: 5px; }
+  .sectTwo .carousel .carousel-control-prev {
+    z-index: 6; } }
+
+@media screen and (max-width: 768px) {
+  .sectTwo {
+    height: 250px; }
+    .sectTwo .carousel .carousel-inner {
+      height: 250px; }
+    .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend {
+      height: 250px;
+      justify-content: center; }
+      .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divImgRecomend {
+        display: none; }
+      .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend {
+        width: 80%;
+        height: auto;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse; }
+        .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend div {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column; }
+          .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend div p {
+            font-size: .7rem;
+            text-align: justify;
+            color: #d2d2d2; }
+          .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend div h3 {
+            color: #83a34f;
+            margin-bottom: 1rem; }
+        .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend .logoRecomend {
+          z-index: 2;
+          margin-left: 1rem;
+          width: 50%;
+          height: auto;
+          text-align: center;
+          padding-right: 1rem; }
+    .sectTwo .carousel .carousel-control-prev, .sectTwo .carousel .carousel-control-next {
+      z-index: 6; } }
 
 .sectionFormIndex {
   margin-top: 3rem; }
@@ -296,6 +389,45 @@
       transition: 0.3s all; }
       .sectionFormIndex .formContact .fieldsetFormContact .divBtnSubmit .btnSubmitFormContact:hover {
         color: #83a34f; }
+
+@media screen and (max-width: 1024px) {
+  .sectionFormIndex .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; } }
+
+@media screen and (max-width: 768px) {
+  .sectionFormIndex .container .divTitinfContact {
+    text-align: center;
+    margin: 0 auto; }
+    .sectionFormIndex .container .divTitinfContact .divBolLogContact {
+      left: 80%;
+      top: unset;
+      bottom: 70%; }
+  .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .2rem; }
+    .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divNombre, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divEmail, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divTelefono, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divNombre, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divEmail, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono {
+      width: 90%; }
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divNombre .inptNombre,
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divNombre .inptApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divNombre .inptEmail, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divNombre .inptTelefono, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido .inptNombre,
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido .inptApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido .inptEmail, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido .inptTelefono, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divEmail .inptNombre,
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divEmail .inptApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divEmail .inptEmail, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divEmail .inptTelefono, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divTelefono .inptNombre,
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divTelefono .inptApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divTelefono .inptEmail, .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divTelefono .inptTelefono, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divNombre .inptNombre,
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divNombre .inptApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divNombre .inptEmail, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divNombre .inptTelefono, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divApellido .inptNombre,
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divApellido .inptApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divApellido .inptEmail, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divApellido .inptTelefono, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divEmail .inptNombre,
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divEmail .inptApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divEmail .inptEmail, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divEmail .inptTelefono, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono .inptNombre,
+      .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono .inptApellido, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono .inptEmail, .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono .inptTelefono {
+        width: 100%;
+        padding: 0.3rem;
+        margin-bottom: 18px; }
+  .sectionFormIndex .formContact .fieldsetFormContact .divTextmensaje {
+    width: 90%;
+    margin: 0 auto; }
+  .sectionFormIndex .formContact .fieldsetFormContact .divBtnSubmit {
+    text-align: center;
+    margin-top: 1rem; } }
 
 .header {
   margin-bottom: 0; }
@@ -432,6 +564,15 @@
     width: 0%; }
   100% {
     width: 95%; } }
+
+@media screen and (max-width: 1023px) {
+  .header .navbar .container-fluid .navbar-nav {
+    margin: 0 auto; }
+    .header .navbar .container-fluid .navbar-nav .nav-link {
+      margin: 0 auto;
+      text-align: center; }
+      .header .navbar .container-fluid .navbar-nav .nav-link.nav-link:hover::before {
+        width: 100%; } }
 
 .footer {
   background-color: #141f3b;

@@ -162,3 +162,21 @@
     }
   }
 }
+@media screen and (max-width: 1023px) {
+  .header {
+    .navbar {
+      .container-fluid {
+        .navbar-nav {
+          margin: 0 auto;
+          .nav-link {
+            margin: 0 auto;
+            text-align: center;
+            &.nav-link:hover::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
