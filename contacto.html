@@ -18,11 +18,12 @@
     <title>BDS-group</title>
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/logobdsnw.jfif" alt="logotipo grupo BDS"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/logobdsnw.jfif"
+                        alt="logotipo grupo BDS"></a>
                 <button id="btnNavTogg" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -45,65 +46,64 @@
                         <li class="nav-item">
                             <a id="itmServicios" class="nav-link" href="servicios.html">Servicios</a>
                         </li>
-
                         <li class="nav-item">
-                            <a id="itmContacto" class="nav-link" href="contacto.html">Contacto</a>
+                            <a id="itmContacto" class="nav-link" href="#">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- div img cultura -->
-    <div class="ctnImgHeaderCultura">
-        <img class="imgHeaderCultura" src="images/cultImg1.png" alt="Cultura BDS">
-        <div class="divh1TitCultura">
-            <h1 class="h1TitCultura">
-            </h1>
-        </div>
-    </div>
-    <!-- seccion uno cultura -->
-    <section class="sectionOneCultura container">
-        <div class="ctnDivsInfCultura">
-            <div class="ctn">
-                <div class="divInfCult">
-                    <h3 class="titInfCult">socios de nuestros clientes</h3>
-                    <p>Generamos relaciones a largo plazo con nuestros clientes y crecemos juntos con ellos.</p>
-                    <div></div>
-                </div>
-                <div class="divInfCult">
-                    <h3 class="titInfCult">conocernos para establecer objetivos</h3>
-                    <p>Entender el modelo de negocio de nuestros clientes es importante para nosotros, asi establecemos interes y objetivos desde un principio.</p>
-                    <div></div>
+
+    <!-- formulario de contacto -->
+    <section class="sectionFormIndex">
+        <div class="container">
+            <div class="divTitinfContact">
+                <h3 class="titContact">Contactanos </h3>
+                <p class="pInfConsulta">si tienes alguna duda o cunsulta no dudes en escribirnos</p>
+                <p class="pinfoCampOblig">Los campos marcados con asterisco son obigatorios *</p>
+                <div class="divBolLogContact">
+                    <div class="bolLogContact"></div>
+                    <div class="bolLogContact"></div>
+                    <div class="bolLogContact"></div>
                 </div>
             </div>
-            <div class="ctn">
-                <div class="divInfCult">
-                    <h3 class="titInfCult">estamos comprometidos</h3>
-                    <p>Con el ecosistema emprendedor que busca no solo un mejor pais sino un mundo mejor con propuestas innovadoras de negocio y proposito.</p>
-                </div>
-                <div class="divInfCult">
-                    <h3 class="titInfCult"> colaboradores felices clientes satisfechos</h3>
-                    <p>Creemos profundamente que mejorar la experiencia laboral entre nuestros colaboradores es la clave para ver reflejada la calidad en nuestro servicio.</p>
-                </div>
-            </div>
-            <div class="ctn">
-                <div class="divInfCult">
-                    <h3 class="titInfCult">siempre comunicados</h3>
-                    <p>Sabemos que la comunicacion constante con nuestros clientes nos permite conocer oportunidades de mejoras alineadas a sus objetivos.</p>
-                </div>
-                <div class="ctnDivsBolLogBds">
-                    <div class="divBolLogBds">
-                        <div class="bolLogBds"></div>
-                        <div class="bolLogBds"></div>
-                        <div class="bolLogBds"></div>
+            <form class="formContact">
+                <fieldset class="fieldsetFormContact">
+                    <div class="divInptsNombreApellido">
+                        <div class="divNombre">
+                            <label class="labelForm labelNombre" for="inptNombre">Nombre*</label>
+                            <input type="text" name="inptNombre" class="inptNombre" id="inptNombre" required>
+                        </div>
+                        <div class="divApellido">
+                            <label class="labelForm labelapellido" for="inptApellido">apellido*</label>
+                            <input type="text" name="inptApellido" class="inptApellido" id="inptApellido" required>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <div class="divInptsEmailtelefono">
+                        <div class="divEmail">
+                            <label class="labelForm labelEmail" for="inptEmail">Email*</label>
+                            <input type="text" name="inptEmail" class="inptEmail" id="inptEmail" required>
+                        </div>
+                        <div class="divTelefono">
+                            <label class="labelForm labeltelefono" for="inptTelefono">Telefono</label>
+                            <input type="text" name="inptTelefono" class="inptTelefono" id="inptTelefono">
+                        </div>
+                    </div>
+                    <div class="divTextmensaje">
+                        <label for="labelMensaje" class="labelForm labelTxtMensaje">Mensaje*</label>
+                        <textarea name="labelMensaje" class="txtMensaje" id="labelMensaje" required></textarea>
+                    </div>
+                    <div class="divBtnSubmit">
+                        <button type="submit" class="btnSubmitFormContact">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+
         </div>
     </section>
-    <!-- footer -->
-    <footer class="footer">
+    <!-- footer Index -->
+    <footer class="footer ">
         <div class="ctnDivsFooter">
             <div class="ChilFooter1">
                 <div class="ctnLogoBdsFooter">
@@ -129,15 +129,22 @@
         </div>
     </footer>
     <!-- scripts -->
-    <!-- JS -->
     <script>
         // pagina activa menu
         window.addEventListener("load", () => {
-            const item = document.getElementById("itmCultura"); item.style.backgroundColor = "#ffffff40"; item.style.borderRadius = "20px 3px 20px 3px";
+            const item = document.getElementById("itmHome"); item.style.backgroundColor = "#ffffff40"; item.style.borderRadius = "15px 3px 15px 3px";
             let numHoja = document.styleSheets.length; let ultiHoja = document.styleSheets[numHoja - 1]; let contDeHoja;
             if (ultiHoja.cssRules) { contDeHoja = ultiHoja.cssRules.length; } else if (ultiHoja.rules) { contDeHoja = ultiHoja.rules.length; }
-            let colorItemSectWindow = "#itmCultura {color: #8aac51 !important;}"; let hoverBefore = "#itmCultura:hover::before {display: none !important; width: 0 !important; height: 0 !important;}";
+            let colorItemSectWindow = "#itmHome {color: #8aac51 !important;}"; let hoverBefore = "#itmHome:hover::before {display: none !important;}";
             ultiHoja.insertRule(colorItemSectWindow, contDeHoja); ultiHoja.insertRule(hoverBefore, contDeHoja);
+        })
+        // boton ver mas
+        let pverMas = document.getElementById("pverMas")
+        let btnVerMas = document.getElementById("btnVerMas")
+        btnVerMas.addEventListener("click", () => {
+            if (window.innerWidth <= 768) {
+                pverMas.classList.toggle("pVerMasNon")
+            }
         })
     </script>
     <script src="js/js.js"></script>
