@@ -2,7 +2,7 @@
 $fuentePrincipal: 'roboto', sans-serif;
 $fuentetextos: 'Roboto Condensed', sans-serif;
 
-
+@import "_servicios.scss";
 @import "_seccionesCultura.scss";
 @import "seccionesIndex.scss";
 @import "header-navBar.scss";
