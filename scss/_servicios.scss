@@ -1,71 +1,69 @@
 // contenido imagen cabecera
 @mixin serviciosBanner {
-    display: flex;
-    position: relative;
-    justify-content: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.serviciosBanner1 {
+  @include serviciosBanner();
+  background-image: url("images/servicios1.png");
+}
+.serviciosBanner2 {
+  @include serviciosBanner();
+  background-image: url("images/servicios2.png");
+}
+.serviciosBanner3 {
+  @include serviciosBanner();
+  background-image: url("images/servicios2.png");
+}
+
+.h2Servicios {
+  color: #141f3b;
+  font-weight: bold;
+  font-size: 4rem;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+}
+
+.cardsContainer {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  gap: 3rem 4rem;
+}
+
+.cardServicios {
+  flex-basis: 0%;
+  flex-grow: 1;
+  max-width: 30%;
+  h3 {
+    color: white;
+    font-size: medium;
+    background: #141f3b;
+    border-radius: 4px 4px 0px 0px;
+    padding: 1rem;
+  }
+  p {
+    padding: 1rem;
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardsContainer {
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    .cardServicios {
+      max-width: 100%;
     }
-
-    .serviciosBanner1{
-        @include serviciosBanner();
-        background-image: url('images/servicios1.png'); 
-    }
-    .serviciosBanner2{
-        @include serviciosBanner();
-        background-image: url('images/servicios2.png');
-    }
-    .serviciosBanner3{
-        @include serviciosBanner();
-        background-image: url('images/servicios2.png');
-    }
-
-    .h2Servicios {
-        color: #141f3b;
-        font-weight: bold;
-        font-size: 4rem;
-        font-family: "roboto", sans-serif;
-        text-align: center;
-      }
-     
-    .cardsContainer{
-        margin: 5rem auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: nowrap;
-        gap: 3rem 4rem;
-        }
-
-    .cardServicios{
-        flex-basis: 0%;
-        flex-grow: 1;
-        max-width: 30%;
-        h3{
-            color: white;
-            font-size: medium;
-            background: #141F3B;
-            border-radius: 4px 4px 0px 0px;
-            padding: 1rem;
-        }
-        p{
-            padding:1rem;
-            font-size: small;
-
-        }
-    }
-
-
-    @media screen and (max-width: 768px){
-        .cardsContainer{
-            flex-direction: column;
-            align-items: center;
-        .cardServicios{
-            max-width: 100%;
-        }
-        }
-    }
+  }
+}

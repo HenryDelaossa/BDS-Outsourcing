@@ -129,10 +129,12 @@
     .articles {
       p {
         display: none;
+        font-size: 12px;
       }
     }
     .divImgArticles {
-      width: 50%;
+      width: 60%;
+      height: 50%;
     }
   }
 }

@@ -52,7 +52,7 @@
       }
       .ctnDivsBolLogBds {
         position: relative;
-        width:35%;
+        width: 35%;
         .divBolLogBds {
           position: absolute;
           top: 0x;
@@ -71,12 +71,14 @@
   }
 }
 // RESPONSIVE SECCION CULTURA
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   .sectionOneCultura {
     .ctnDivsInfCultura {
       .ctn {
+        margin-bottom: 0;
         .divInfCult {
           width: 100%;
+          margin-bottom: 2rem;
           div {
             width: 80px;
             height: 80px;
@@ -90,7 +92,7 @@
     }
   }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .sectionOneCultura {
     .ctnDivsInfCultura {
       .ctn {
@@ -98,9 +100,24 @@
         .divInfCult {
           width: 100%;
           padding: 0;
+          div {
+            width: 65px;
+            height: 65px;
+            top: -20px;
+            left: -10px;
+            background-color: #141f3b5c;
+          }
         }
         .ctnDivsBolLogBds {
+          height: 50%;
           width: 100%;
+          .divBolLogBds {
+            display: flex;
+            .bolLogBds {
+              margin: .3rem;
+              background-color: #83a34f;
+            }
+          }
         }
       }
     }
