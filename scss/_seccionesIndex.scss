@@ -402,6 +402,12 @@
         display: block;
         font-family: $fuentePrincipal;
         cursor: pointer;
+        .spanErr {
+          color: gray;
+          font-weight: lighter;
+          font-size: 12px;
+          display: none;
+        }
       }
       .divInptsNombreApellido {
         display: flex;
@@ -415,6 +421,11 @@
           .inptApellido {
             width: 100%;
             padding: 0.3rem;
+          }
+          .inptNombre:focus,
+          .inptApellido:focus {
+            border: none;
+            outline: 1px solid black;
           }
         }
       }
@@ -430,6 +441,11 @@
           .inptTelefono {
             width: 100%;
             padding: 0.3rem;
+          }
+          .inptEmail:focus,
+          .inptTelefono:focus {
+            border: none;
+            outline: 1px solid black;
           }
         }
       }
@@ -510,4 +526,45 @@
       }
     }
   }
+}
+
+// seccion modal para validacion caso form correcto
+.sectionValidForm {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000040;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  .divValidFormContact {
+    position: relative;
+    background-color: #80a93f;
+    border-radius: 15px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 30px 5px #0000004a;
+    h4, h3 {
+      font-size: 2rem;
+      color: #fff;
+    }
+    b {
+      color: #fff;
+      font-size: 20px;
+      position: absolute;
+      top: 0;
+      left: unset;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+
 }

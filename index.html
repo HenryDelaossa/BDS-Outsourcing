@@ -57,18 +57,18 @@
     <div class="ctncrecJunt">
         <img class="imgCrecJunt" src="images/ind1.png" alt="creciento juntos BDS">
         <div class="DivcrecJuntos">
-            <h1 class="h1CrecJuntos">
+            <!-- <h1 class="h1CrecJuntos">
                 Creciendo juntos
-            </h1>
+            </h1> -->
         </div>
     </div>
     <!-- seccion 1 articulos index -->
     <section class="sectOne">
         <div class="articles">
             <h3>Articulos</h3>
-            <p id="pverMas" class="pVerMas">Si te interesa conocer más sobre economia te invitamos a que leas las notas que publicamos
-                de manera
-                regular en nuestro blog exclusivo</p>
+            <p id="pverMas" class="pVerMas">Si te interesa conocer más sobre sobre tributación, finanzas y el ecosistema
+                laboral, te invitamos a que leas nuestras notas, dónde te explicamos de manera fácil todo lo que debas
+                saber.</p>
             <button id="btnVerMas" class="btnVerMas">Ver más</button>
         </div>
         <div class="divImgArticles">
@@ -184,7 +184,9 @@
         <div class="container">
             <div class="divTitinfContact">
                 <h3 class="titContact">Contactanos </h3>
-                <p class="pInfConsulta">si tienes alguna duda o cunsulta no dudes en escribirnos</p>
+                <span
+                    style="text-decoration: underline; font-size: 20px; margin-bottom: 1rem;">︎contacto@bds.com.pe</span>
+
                 <p class="pinfoCampOblig">Los campos marcados con asterisco son obigatorios *</p>
                 <div class="divBolLogContact">
                     <div class="bolLogContact"></div>
@@ -196,34 +198,42 @@
                 <fieldset class="fieldsetFormContact">
                     <div class="divInptsNombreApellido">
                         <div class="divNombre">
-                            <label class="labelForm labelNombre" for="inptNombre">Nombre*</label>
+                            <label class="labelForm labelNombre" for="inptNombre">Nombre* <i class="spanErr errNombre"> Dato obligatorio</i></label>
                             <input type="text" name="inptNombre" class="inptNombre" id="inptNombre" required>
                         </div>
                         <div class="divApellido">
-                            <label class="labelForm labelapellido" for="inptApellido">apellido*</label>
+                            <label class="labelForm labelapellido" for="inptApellido">apellido* <i class="spanErr errApell"> Dato obligatorio</i></label>
                             <input type="text" name="inptApellido" class="inptApellido" id="inptApellido" required>
                         </div>
                     </div>
                     <div class="divInptsEmailtelefono">
                         <div class="divEmail">
-                            <label class="labelForm labelEmail" for="inptEmail">Email*</label>
+                            <label class="labelForm labelEmail" for="inptEmail">Email* <i class="spanErr errEmail"> Dato obligatorio</i></label>
                             <input type="text" name="inptEmail" class="inptEmail" id="inptEmail" required>
                         </div>
                         <div class="divTelefono">
-                            <label class="labelForm labeltelefono" for="inptTelefono">Telefono</label>
+                            <label class="labelForm labeltelefono" for="inptTelefono">Telefono <i class="spanErr errTel"> Dato obligatorio</i></label>
                             <input type="text" name="inptTelefono" class="inptTelefono" id="inptTelefono">
                         </div>
                     </div>
                     <div class="divTextmensaje">
-                        <label for="labelMensaje" class="labelForm labelTxtMensaje">Mensaje*</label>
+                        <label for="labelMensaje" class="labelForm labelTxtMensaje">Mensaje* <i class="spanErr errMsje"> Dato obligatorio</i></label>
                         <textarea name="labelMensaje" class="txtMensaje" id="labelMensaje" required></textarea>
                     </div>
                     <div class="divBtnSubmit">
-                        <button type="submit" class="btnSubmitFormContact">Enviar</button>
+                        <button type="submit" class="btnSubmitFormContact" id="btnSubmitFormContact">Enviar</button>
                     </div>
                 </fieldset>
             </form>
 
+        </div>
+    </section>
+
+    <section class="sectionValidForm" id="sectionValidForm">
+        <div class="divValidFormContact">
+            <b class="xClose">x</b>
+            <h4>¡Mensaje enviado con exito!</h4>
+            <h3>nos contactaremos a la mayor brevedad</h3>
         </div>
     </section>
     <!-- footer Index -->
@@ -262,16 +272,17 @@
             let colorItemSectWindow = "#itmHome {color: #8aac51 !important;}"; let hoverBefore = "#itmHome:hover::before {display: none !important;}";
             ultiHoja.insertRule(colorItemSectWindow, contDeHoja); ultiHoja.insertRule(hoverBefore, contDeHoja);
         })
-        // boton ver mas
-        let pverMas = document.getElementById("pverMas")
-        let btnVerMas = document.getElementById("btnVerMas")
-        btnVerMas.addEventListener("click", () => {
-            if (window.innerWidth <= 768) {
-                pverMas.classList.toggle("pVerMasNon")
-            }
-        })
+
+        const navTogg = document.getElementById("btnNavTogg");
+        const spannNavTogg = document.querySelector(".ctnSpanNav");
+        const navbartglrIcon = document.querySelector(".navbar-toggler-icon");
+        navTogg.addEventListener("click", () => {
+            spannNavTogg.classList.toggle("ctnSpanNavInac");
+            navbartglrIcon.classList.toggle("outLinesBackspn");
+        });
     </script>
-    <script src="js/js.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/formValid.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

@@ -469,6 +469,11 @@
       display: block;
       font-family: "roboto", sans-serif;
       cursor: pointer; }
+      .sectionFormIndex .formContact .fieldsetFormContact .labelForm .spanErr {
+        color: gray;
+        font-weight: lighter;
+        font-size: 12px;
+        display: none; }
     .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido {
       display: flex;
       justify-content: space-between;
@@ -483,6 +488,12 @@
         .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido .inptApellido {
           width: 100%;
           padding: 0.3rem; }
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divNombre .inptNombre:focus,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divNombre .inptApellido:focus,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido .inptNombre:focus,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsNombreApellido .divApellido .inptApellido:focus {
+          border: none;
+          outline: 1px solid black; }
     .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono {
       display: flex;
       justify-content: space-between;
@@ -497,6 +508,12 @@
         .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono .inptTelefono {
           width: 100%;
           padding: 0.3rem; }
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divEmail .inptEmail:focus,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divEmail .inptTelefono:focus,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono .inptEmail:focus,
+        .sectionFormIndex .formContact .fieldsetFormContact .divInptsEmailtelefono .divTelefono .inptTelefono:focus {
+          border: none;
+          outline: 1px solid black; }
     .sectionFormIndex .formContact .fieldsetFormContact .divTextmensaje {
       margin-bottom: 2rem;
       width: 100%; }
@@ -553,6 +570,41 @@
   .sectionFormIndex .formContact .fieldsetFormContact .divBtnSubmit {
     text-align: center;
     margin-top: 1rem; } }
+
+.sectionValidForm {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000040;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; }
+  .sectionValidForm .divValidFormContact {
+    position: relative;
+    background-color: #80a93f;
+    border-radius: 15px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 30px 5px #0000004a; }
+    .sectionValidForm .divValidFormContact h4, .sectionValidForm .divValidFormContact h3 {
+      font-size: 2rem;
+      color: #fff; }
+    .sectionValidForm .divValidFormContact b {
+      color: #fff;
+      font-size: 20px;
+      position: absolute;
+      top: 0;
+      left: unset;
+      right: 20px;
+      cursor: pointer; }
 
 .header {
   margin-bottom: 0; }
