@@ -13,6 +13,9 @@
             .ctnLogoBdsFooter {
                 margin-left: 1rem;
                 text-align: center;
+                .logoFooter{
+                    height: 3rem;
+                }
                 .logoBdsFooter {
                     text-decoration: none;
                     color: #fff;
@@ -50,6 +53,7 @@
             }
         }
         .ChilFooter2 {
+            margin: 1rem 2rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -84,5 +88,9 @@
                 }
             }
         }
+    }
+    i{
+        color: #fff;
+        font-size: 2rem;
     }
 }

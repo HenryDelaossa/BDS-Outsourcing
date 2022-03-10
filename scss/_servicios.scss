@@ -13,15 +13,15 @@
 
 .serviciosBanner1 {
   @include serviciosBanner();
-  background-image: url("images/servicios1.png");
+  background-image: url("../images/servicios1.png");
 }
 .serviciosBanner2 {
   @include serviciosBanner();
-  background-image: url("images/servicios2.png");
+  background-image: url("../images/servicios2.png");
 }
 .serviciosBanner3 {
   @include serviciosBanner();
-  background-image: url("images/servicios2.png");
+  background-image: url("../images/funcionesAdministrativas.png");
 }
 
 .h2Servicios {
@@ -37,19 +37,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 3rem 4rem;
 }
 
 .cardServicios {
   flex-basis: 0%;
   flex-grow: 1;
-  max-width: 30%;
+  max-width: 35%;
+  
+
+  .tituloCard{
+    width: 100%;
+    background-color: #141f3b;
+    border-radius: 3px;
+  }
   h3 {
     color: white;
     font-size: medium;
-    background: #141f3b;
-    border-radius: 4px 4px 0px 0px;
     padding: 1rem;
   }
   p {
@@ -63,7 +68,9 @@
     flex-direction: column;
     align-items: center;
     .cardServicios {
-      max-width: 100%;
+      margin:1rem;
+      max-width: none;
+      width: 80%;
     }
   }
 }
