@@ -728,6 +728,9 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+  .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend .logoRecomend {
+    display: none;
+  }
   .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend div {
     height: 100%;
     display: -webkit-box;
@@ -744,10 +747,10 @@
   .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend div p {
     font-size: .7rem;
     text-align: justify;
-    color: #d2d2d2;
+    color: #141f3b;
   }
   .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend div h3 {
-    color: #83a34f;
+    color: #141f3b;
     margin-bottom: 1rem;
   }
   .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divTextRecomend .logoRecomend {
@@ -757,6 +760,12 @@
     height: auto;
     text-align: center;
     padding-right: 1rem;
+  }
+  .sectTwo .carousel .imgBackRecomend {
+    display: none;
+  }
+  .sectTwo .carousel .ctnRecomend {
+    background-color: #ebebeb;
   }
   .sectTwo .carousel .carousel-control-prev, .sectTwo .carousel .carousel-control-next {
     z-index: 6;

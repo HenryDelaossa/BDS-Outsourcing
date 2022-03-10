@@ -355,6 +355,9 @@
             align-items: center;
             flex-direction: row-reverse;
             
+            .logoRecomend{
+              display:none
+            }
             div {
               height: 100%;
               display: flex;
@@ -363,10 +366,10 @@
               p {
                 font-size: .7rem;
                 text-align: justify;
-                color: #d2d2d2;
+                color: #141f3b;
               }
               h3 {
-                color: #83a34f;
+                color: #141f3b;
                 margin-bottom: 1rem;
               }
             }
@@ -377,10 +380,19 @@
               height: auto;
               text-align: center;
               padding-right: 1rem;
+
+           
             }
           }
         }
       }
+      .imgBackRecomend{
+       
+        display:none;
+      }
+      .ctnRecomend{
+        background-color:rgb(235, 235, 235);
+      }  
       .carousel-control-prev,.carousel-control-next {
         z-index: 6;
       }
