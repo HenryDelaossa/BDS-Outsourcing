@@ -17,6 +17,7 @@
   height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   background-image: url("../images/servicios1.png");
 }
 
@@ -39,6 +40,7 @@
   height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   background-image: url("../images/servicios2.png");
 }
 
@@ -61,6 +63,7 @@
   height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   background-image: url("../images/funcionesAdministrativas.png");
 }
 
@@ -420,7 +423,6 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-  border-radius: 10px;
 }
 
 .sectOne .puntos {
@@ -531,7 +533,7 @@
 }
 
 .sectTwo .carousel .ctnRecomend .ctnImgTextRecomend .divImgRecomend .imgRecomend {
-  width: 100%;
+  width: auto;
   height: auto;
   border: 1px solid #141f3b;
 }
