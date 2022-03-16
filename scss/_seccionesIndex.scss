@@ -45,7 +45,6 @@
     display: none;
   }
 }
-
 // seccion uno
 .sectOne {
   width: 100%;
@@ -122,7 +121,6 @@
       width: 38%;
     }
   }
-
   .puntos{
     display:none;
   }
@@ -147,7 +145,6 @@
   }
 
 }
-
 // secciones de recomendaciones
 .sectTwo {
   width: 100%;
@@ -186,7 +183,6 @@
           display: flex;
           justify-content: center;
           z-index: 1;
-
           .imgRecomend {
             width: auto;
             height: auto;
@@ -273,11 +269,9 @@
   background-color: #294A7F;
   width: 100%;
   padding:2rem 7rem;
-
   .h3Clientes{
     color:#fff;
   }
-
   .logosClientes{
     display: flex;
     align-items:baseline;
@@ -288,9 +282,6 @@
     margin: 20px auto;
   }
   }
-
-
-
 // responsive seccion dos hasta 1023px
 @media screen and (max-width: 1023px) {
   .sectTwo {
@@ -380,14 +371,11 @@
               height: auto;
               text-align: center;
               padding-right: 1rem;
-
-           
             }
           }
         }
       }
       .imgBackRecomend{
-       
         display:none;
       }
       .ctnRecomend{
@@ -610,5 +598,4 @@
       cursor: pointer;
     }
   }
-
 }

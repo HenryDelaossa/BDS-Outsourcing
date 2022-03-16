@@ -1,13 +1,11 @@
 // fuentes:
 $fuentePrincipal: 'roboto', sans-serif;
 $fuentetextos: 'Roboto Condensed', sans-serif;
-
 @import "_servicios.scss";
 @import "_seccionesCultura.scss";
 @import "seccionesIndex.scss";
 @import "header-navBar.scss";
 @import "footer.scss";
-
 * {
     box-sizing: border-box;
     margin: 0;
