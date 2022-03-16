@@ -46,9 +46,8 @@
   flex-basis: 0%;
   flex-grow: 1;
   max-width: 35%;
-  
 
-  .tituloCard{
+  .tituloCard {
     width: 100%;
     background-color: #141f3b;
     border-radius: 3px;
@@ -69,9 +68,16 @@
     flex-direction: column;
     align-items: center;
     .cardServicios {
-      margin:1rem;
+      margin: 1rem;
       max-width: none;
       width: 80%;
+    }
+  }
+  .serviciosBanner3 {
+    .tituloServicios {
+      .h2Servicios {
+        font-size: 3rem;
+      }
     }
   }
 }

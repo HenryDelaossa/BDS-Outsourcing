@@ -41,13 +41,14 @@
           font-weight: 500;
         }
         div {
-          width: 115px;
-          height: 115px;
+          width: 130px;
+          height: 130px;
           border-radius: 50%;
-          background-color: #83a34f59;
+          background-color: #83a34f85;
           position: absolute;
-          top: -30px;
+          top: -40px;
           left: -36px;
+          z-index: -1;
         }
       }
       .ctnDivsBolLogBds {
@@ -101,11 +102,7 @@
           width: 100%;
           padding: 0;
           div {
-            width: 65px;
-            height: 65px;
-            top: -20px;
-            left: -10px;
-            background-color: #141f3b5c;
+            display: none;
           }
         }
         .ctnDivsBolLogBds {
